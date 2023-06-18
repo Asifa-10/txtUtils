@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(217, 212, 212);
+            height: 400px;
+        }
+        .header{
+            margin-left: 20px;
+            background-color: rgb(6, 102, 81);
+            display: flex;
+            list-style: none;
+            /* padding: 10px;
+            margin-left: 10px; */
+        }
+        .header li{
+            padding: 10px;
+            margin-left: 10px;
+        }
+        .header input{
+            margin-left: 800px;
+            font-size: large;
+        }
+        .header label{
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        #txt{
+            height: 100px;
+            width: 95%;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        ::placeholder{
+            margin-top: 10px;
+            text-align: initial;
+        }
+        #upprcase{
+            color:rgb(39, 113, 187) ;
+            border-radius: 5px;
+            border-color:rgb(39, 113, 187) ;
+            margin-left: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #lowrcase{
+            color:rgb(179, 43, 91) ;
+            border-radius: 5px;
+            border-color:rgb(179, 43, 91)  ;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #clr{
+            color:rgb(28, 103, 51) ;
+            border-radius: 5px;
+            border-color:rgb(28, 103, 51)  ;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #remspce{
+            color:rgb(39, 113, 187) ;
+            border-radius: 5px;
+            border-color:rgb(39, 113, 187) ;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        p{
+            margin-left: 20px;
+        }
+        #res{
+            margin-left: 20px;
+            color: brown;
+            font-weight: bold;
+        }
+        h3{
+            margin-left: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+
+                <li><b> TextUtils </b></li>
+                <li>Home</li>
+                <li>AboutUtils</li>
+
+                <input type="checkbox" name="" id="">
+                <label for="">switch to dark mode</label> 
+            </div>
+            <br><br>
+            <textarea name="" id="txt" cols="30" rows="10"></textarea>
+            <br>
+            <button id="upprcase" onclick="upprcase()"> convert to uppercase</button>
+            <button id="lowrcase" onclick="lowrcase()">convert to lowercase</button>
+            <button id="clr" onclick="clr()">clear</button>
+            <button id="remspce" onclick="remspce()">Remove Extra Spaces</button>
+            <br>
+            <p ><span id="wrdsCnt"></span> words and <span id="chCnt"></span> alphabets </p>
+            <br>
+            <h3>Preview Mode</h3>
+            <p id="res"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
